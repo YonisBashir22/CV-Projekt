@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Min CV</title>
+  <link rel="stylesheet" href="CVPR.css" />
+  <link rel="icon" href="Skärmbild 2025-01-26 235441.png" />
+</head>
+<body>
+  <header>
+    <div class="logo">Min CV</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="CVPR2.html">About Me</a></li>
+        <li><a href="school.html">My School</a></li>
+        <li><a href="CVPR3.html">Experiences</a></li>
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Min CV</h1>
+    <ul>
+      <li>Göteborgs Kommun, Funktionsstöd</li>
+      <li>Göteborgs Kommun, Städare</li>
+      <li>Göteborg Energi, Elektriker</li>
+    </ul>
+  </main>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+  </script>
+</body>
+</html>
